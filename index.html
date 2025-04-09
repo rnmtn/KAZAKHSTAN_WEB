@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/png">
     <title>Welcome to Kazakhstan</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <style>
         .bg-fixed {
-            background-image: url('images/bg.jpg');
-            background-attachment: fixed;
+            background-image: url(images/bg2.jpg);
             background-size: cover;
-            height: 400px;
+            height: 300px;
             width: 100%;
+        }
+        .bg-dark-100 {
+            background-color: #1a202c;
+        }
+        .bg-blur {
+            backdrop-filter: blur(20px); /* Adjust the blur intensity as needed */
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+        }
+        .text-bg-blur {
+            backdrop-filter: blur(20px); /* Blur effect for text background */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 1rem; /* Add padding for better appearance */
+            border-radius: 0.5rem; /* Rounded corners */
         }
     </style>
 </head>
@@ -28,10 +39,10 @@
                     <span class="text-xl font-bold text-white">Kazakhstan</span>
                 </a>
                 <ul class="flex space-x-4">
-                    <li><a href="geography.html" class="text-white">Geography</a></li>
-                    <li><a href="culture.html" class="text-white">Culture</a></li>
-                    <li><a href="leisure.html" class="text-white">Leisure Activities</a></li>
-                    <li><a href="must-visit.html" class="text-white">Must-Visit Places</a></li>
+                    <li><a href="geography.html" class="text-white hover:underline">Geography</a></li>
+                    <li><a href="culture.html" class="text-white hover:underline">Culture</a></li>
+                    <li><a href="leisure.html" class="text-white hover:underline">Leisure Activities</a></li>
+                    <li><a href="must-visit.html" class="text-white hover:underline">Must-Visit Places</a></li>
                 </ul>
             </div>
         </div>
@@ -40,28 +51,62 @@
     <div class="bg-fixed">
         <div class="container mx-auto text-center h-full flex flex-col justify-center">
             <h1 class="text-4xl font-bold text-black">Welcome to Kazakhstan!</h1>
-            <p class="mt-4 text-lg text-black">Discover the beauty and diversity of this vast country.</p>
-            <a href="must-visit.html" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded">Explore Now</a>
+            <p class="mt-4 text-lg text-">Discover the beauty and diversity of this vast country.</p>
         </div>
     </div>
     
-    <div class="flex justify-center items-center min-h-screen bg-[url('images/bg.jpg')] bg-cover bg-center p-4">
-      <div class="max-w-4xl shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row border border-gray-300 backdrop-blur-md bg-transparent hover:shadow-2xl hover:scale-105 transition-transform duration-300">
-          <!-- Left Side: Image -->
-          <img src="images/one.jpg" alt="Card Image" class="w-full md:w-1/2 object-cover">
-  
-          <!-- Right Side: Content -->
-          <div class="p-6 flex flex-col justify-center md:w-1/2">
-              <h2 class="text-2xl font-bold text-white">Card Title</h2>
-              <p class="mt-4 text-gray-200">
-                  This is a sample paragraph that describes the content of the card. It is placed on the right side while the image is on the left.
-              </p>
-              <button class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-                  Learn More
-              </button>
-          </div>
-      </div>
-  </div>
-  
+    <div class="flex flex-col justify-center items-center min-h-screen bg-cover bg-center p-4" style="background-image: url('images/bg.jpg');">
+        <div class="max-w-4xl mb-6 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row border border-gray-300 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+            <img src="images/two.jpg" alt="Card Image" class="w-full md:w-1/2 object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2 text-bg-blur">
+                <h2 class="text-2xl font-bold text-black">Kazakhstan Geography</h2>
+                <p class="mt-4 text-black">
+                    Kazakhstan is located in Central Asia, with a small portion in Eastern Europe. With an area of about 2,724,900 square kilometers (1,052,100 sq mi) Kazakhstan is more than twice the combined size of the other four Central Asian states and 60% larger than Alaska. The country borders Turkmenistan, Uzbekistan, and Kyrgyzstan to the south; Russia to the north; Russia and the Caspian Sea to the west; and China's Xinjiang Uygur Autonomous Region to the east.
+                </p>
+                <a href="geography.html" class="mt-6 inline-block bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700 transition">Check for more!</a>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mb-6 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row border border-gray-300 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+            <img src="images/one.jpg" alt="Card Image" class="w-full md:w-1/2 object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2 text-bg-blur">
+                <h2 class="text-2xl font-bold text-black">Kazakh Culture</h2>
+                <p class="mt-4 text-black">
+                    Modern Kazakh culture is mainly characterized as a synthesis of Tengrian nomadic and Islamic and European elements. Nomadic elements derived from predecessors, such as the Huns, First Turkic Khaganate, Golden Horde and Kazakh Khanate. Nomadism largely shaped its peculiar music, clothing, jewelry and oral literature. Kazakh culture also seems to be strongly influenced by the nomadic Scythians.
+                </p>
+                <a href="culture.html" class="mt-6 inline-block bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700 transition">Check for more!</a>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mb-6 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row border border-gray-300 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+            <img src="images/three.jpg" alt="Card Image" class="w-full md:w-1/2 object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2 text-bg-blur">
+                <h2 class="text-2xl font-bold text-black">Kazakhstan Leisure Activities</h2>
+                <p class="mt-4 text-black">
+                    Kazakhstan offers a wide array of leisure activities, from exploring its stunning natural landscapes like Charyn Canyon and Kolsai Lakes to immersing in its rich culture and history, including visiting the National Museum and enjoying traditional sports and games
+                </p>
+                <a href="leisure.html" class="mt-6 inline-block bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700 transition">Check for more!</a>
+            </div>
+        </div>
+        
+        <div class="max-w-4xl mb-6 shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row border border-gray-300 hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+            <img src="images/four.jpg" alt="Card Image" class="w-full md:w-1/2 object-cover">
+            <div class="p-6 flex flex-col justify-center md:w-1/2 text-bg-blur">
+                <h2 class="text-2xl font-bold text-black">Kazakhstan must-visit places</h2>
+                <p class="mt-4 text-black">
+                    For an unforgettable trip to Kazakhstan, consider visiting the modern capital of Nur-Sultan, explore the cultural heart of Almaty, and marvel at the natural wonders of Charyn Canyon and Kolsai Lakes</p>
+                <a href="must-visit.html" class="mt-6 inline-block bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700 transition">Check for more!</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <class="hover:underline">Kazakhstan™</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+    
 </body>
 </html>

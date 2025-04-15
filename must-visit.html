@@ -3,31 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Must-Visit Places in Kazakhstan</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Welcome to Kazakhstan</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <style>
+        .bg-fixed {
+            background-image: url(images/leisure_bg.jpg);
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-blue-600 p-4">
-        <div class="container mx-auto">
-            <a href="index.html" class="text-white text-lg font-bold">Kazakhstan</a>
-            <ul class="flex space-x-4">
-                <li><a href="geography.html" class="text-white">Geography</a></li>
-                <li><a href="culture.html" class="text-white">Culture</a></li>
-                <li><a href="leisure.html" class="text-white">Leisure Activities</a></li>
-                <li><a href="must-visit.html" class="text-white">Must-Visit Places</a></li>
-            </ul>
+<body class="bg-dark-100">
+    <nav class="bg-green-600 p-4">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/icon.png" alt="Logo" class="w-10 h-10 mr-2">
+                    <span class="text-xl font-bold text-white">Kazakhstan</span>
+                </a>
+                <ul class="flex space-x-4">
+                    <li><a href="geography.html" class="text-white hover:underline">Geography</a></li>
+                    <li><a href="culture.html" class="text-white hover:underline">Culture</a></li>
+                    <li><a href="leisure.html" class="text-white hover:underline">Leisure Activities</a></li>
+                    <li><a href="must-visit.html" class="text-white hover:underline">Must-Visit Places</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container mx-auto text-center py-20">
-        <h1 class="text-3xl font-bold">Must-Visit Places in Kazakhstan</h1>
-        <ul class="mt-4 space-y-2">
-            <li>1. Almaty - A vibrant city with rich culture.</li>
-            <li>2. Astana (Nur-Sultan) - The modern capital with unique architecture.</li>
-            <li>3. Charyn Canyon - A breathtaking natural wonder.</li>
-            <li >4. Mausoleum of Khoja Ahmed Yasawi - A UNESCO World Heritage site showcasing Islamic architecture.</li>
-            <li>5. Kolsai Lakes - A picturesque series of lakes ideal for hiking and nature enthusiasts.</li>
-        </ul>
-        <p class="mt-4">These locations highlight the diverse beauty and cultural richness of Kazakhstan, making them essential stops for any traveler.</p>
+    
+    <div class="bg-fixed">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h1 class="text-4xl font-bold text-black">Welcome to Kazakhstan!</h1>
+            <p class="mt-4 text-lg text-">Discover the beauty and diversity of this vast country.</p>
+            <a href="https://www.akorda.kz/en/republic_of_kazakhstan/kazakhstan" class="mt-6 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know more about Kazakhstan</a>
+        </div>
     </div>
+
+    <section class="py-12 bg-white text-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Must-Visit Places in Kazakhstan</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Charyn Canyon -->
+                <div>
+                    <img src="images/charyn_canyon.jpg" alt="Charyn Canyon" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Charyn Canyon</h3>
+                    <p class="mb-4">
+                        Often compared to the Grand Canyon, Charyn Canyon is a natural wonder located in the Almaty region. Its dramatic rock formations and vibrant colors make it a favorite among hikers and photographers.
+                    </p>
+                </div>
+                <!-- Lake Kaindy -->
+                <div>
+                    <img src="images/lake_kaindy.jpg" alt="Lake Kaindy" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Lake Kaindy</h3>
+                    <p class="mb-4">
+                        Known for its submerged forest, Lake Kaindy is a surreal and hauntingly beautiful site. The turquoise water and tree trunks rising from the lake create a mystical landscape unlike any other.
+                    </p>
+                </div>
+                <!-- Astana City -->
+                <div>
+                    <img src="images/astana.jpg" alt="Astana" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Astana (Nur-Sultan)</h3>
+                    <p class="mb-4">
+                        The capital city of Kazakhstan is a futuristic metropolis known for its bold architecture. Iconic sites like the Bayterek Tower and the Khan Shatyr shopping mall highlight the city’s modern charm.
+                    </p>
+                </div>
+                <!-- Almaty City -->
+                <div>
+                    <img src="images/almaty.jpg" alt="Almaty" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Almaty</h3>
+                    <p class="mb-4">
+                        Nestled at the foot of the mountains, Almaty is Kazakhstan’s cultural and economic hub. It offers beautiful parks, lively markets, and access to natural attractions like Medeu and Shymbulak.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <class="hover:underline">Kazakhstan™</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
 </body>
 </html>
+    

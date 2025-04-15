@@ -3,25 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leisure Activities in Kazakhstan</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Welcome to Kazakhstan</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <style>
+        .bg-fixed {
+            background-image: url(images/leisure_bg.jpg);
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-blue-600 p-4">
-        <div class="container mx-auto">
-            <a href="index.html" class="text-white text-lg font-bold">Kazakhstan</a>
-            <ul class="flex space-x-4">
-                <li><a href="geography.html" class="text-white">Geography</a></li>
-                <li><a href="culture.html" class="text-white">Culture</a></li>
-                <li><a href="leisure.html" class="text-white">Leisure Activities</a></li>
-                <li><a href="must-visit.html" class="text-white">Must-Visit Places</a></li>
-            </ul>
+<body class="bg-dark-100">
+    <nav class="bg-green-600 p-4">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/icon.png" alt="Logo" class="w-10 h-10 mr-2">
+                    <span class="text-xl font-bold text-white">Kazakhstan</span>
+                </a>
+                <ul class="flex space-x-4">
+                    <li><a href="geography.html" class="text-white hover:underline">Geography</a></li>
+                    <li><a href="culture.html" class="text-white hover:underline">Culture</a></li>
+                    <li><a href="leisure.html" class="text-white hover:underline">Leisure Activities</a></li>
+                    <li><a href="must-visit.html" class="text-white hover:underline">Must-Visit Places</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container mx-auto text-center py-20">
-        <h1 class="text-3xl font-bold">Leisure Activities in Kazakhstan</h1>
-        <p class="mt-4">Kazakhstan offers a variety of leisure activities for adventure seekers.</p>
-        <p class="mt-2">From hiking in the mountains to skiing in the winter, there's something for everyone.</p>
+    
+    <div class="bg-fixed">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h1 class="text-4xl font-bold text-black">Welcome to Kazakhstan!</h1>
+            <p class="mt-4 text-lg text-">Discover the beauty and diversity of this vast country.</p>
+            <a href="https://www.akorda.kz/en/republic_of_kazakhstan/kazakhstan" class="mt-6 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know more about Kazakhstan</a>
+        </div>
     </div>
+
+    <section class="py-12 bg-white text-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Leisure Activities in Kazakhstan</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <img src="images/horseback.png" alt="Traditional Horseback Riding" class="rounded-lg shadow-lg mb-4">
+                    <p class="mb-4">
+                        Horseback riding is a traditional activity deeply rooted in Kazakh culture. It's not only a sport but also a symbol of freedom and history, often performed during festivals and national celebrations.
+                    </p>
+                    <img src="images/eagle_hunting.png" alt="Eagle Hunting" class="rounded-lg shadow-lg mb-4">
+                    <p class="mb-4">
+                        Eagle hunting, or berkutchi, is a centuries-old tradition where trained golden eagles assist hunters. It's especially prominent in the mountainous regions of the country.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/skiing.jpg" alt="Skiing in Almaty" class="rounded-lg shadow-lg mb-4">
+                    <p class="mb-4">
+                        In winter, skiing becomes a popular pastime, especially near Almaty where the Shymbulak ski resort offers stunning views and excellent slopes.
+                    </p>
+                    <img src="images/city_life.jpg" alt="City Life and Entertainment" class="rounded-lg shadow-lg mb-4">
+                    <p class="mb-4">
+                        In the cities, people enjoy cinemas, malls, cafes, and cultural venues. The modern urban lifestyle in cities like Nur-Sultan and Almaty includes concerts, theaters, and lively social scenes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <class="hover:underline">Kazakhstan™</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
 </body>
 </html>

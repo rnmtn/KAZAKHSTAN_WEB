@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culture of Kazakhstan</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Welcome to Kazakhstan</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <style>
+        .bg-fixed {
+            background-image: url(images/cbg.jpg);
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-blue-600 p-4">
-        <div class="container mx-auto">
-            <a href="index.html" class="text-white text-lg font-bold">Kazakhstan</a>
-            <ul class="flex space-x-4">
-                <li><a href="geography.html" class="text-white">Geography</a></li>
-                <li><a href="culture.html" class="text-white">Culture</a></li>
-                <li><a href="leisure.html" class="text-white">Leisure Activities</a></li>
-                <li><a href="must-visit.html" class="text-white">Must-Visit Places</a></li>
-            </ul>
+<body class="bg-dark-100">
+    <nav class="bg-green-600 p-4">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/icon.png" alt="Logo" class="w-10 h-10 mr-2">
+                    <span class="text-xl font-bold text-white">Kazakhstan</span>
+                </a>
+                <ul class="flex space-x-4">
+                    <li><a href="geography.html" class="text-white hover:underline">Geography</a></li>
+                    <li><a href="culture.html" class="text-white hover:underline">Culture</a></li>
+                    <li><a href="leisure.html" class="text-white hover:underline">Leisure Activities</a></li>
+                    <li><a href="must-visit.html" class="text-white hover:underline">Must-Visit Places</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container mx-auto text-center py-20">
-        <h1 class="text-3xl font-bold">Culture of Kazakhstan</h1>
-        <p class="mt-4">Kazakhstan's culture is a blend of nomadic traditions and modern influences.</p>
-        <p class="mt-2">The country celebrates various festivals that showcase its rich heritage.</p>
+    
+    <div class="bg-fixed">
+        <div class="container mx-auto text-center h-full flex flex-col justify-center">
+            <h1 class="text-4xl font-bold text-black">Welcome to Kazakhstan!</h1>
+            <p class="mt-4 text-lg text-">Discover the beauty and diversity of this vast country.</p>
+            <a href="https://www.akorda.kz/en/republic_of_kazakhstan/kazakhstan" class="mt-6 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know more about Kazakhstan</a>
+        </div>
     </div>
+    <br>
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Kazakh Culture Highlights</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+            <img class="w-full h-56 object-cover" src="/images/traditional-clothing.png" alt="Kazakh Traditional Clothing">
+            <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Traditional Clothing</h3>
+                <p class="text-gray-700 dark:text-gray-300">Kazakh people wear richly embroidered garments made from silk, wool, and leather, reflecting centuries of nomadic heritage and Islamic influences.</p>
+                <a href="https://www.advantour.com/kazakhstan/culture/clothes.htm" class="mt-4 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know More</a>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+            <img class="w-full h-56 object-cover" src="/images/yurt-living.png" alt="Yurt Living">
+            <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Yurt Living</h3>
+                <p class="text-gray-700 dark:text-gray-300">The yurt, or "kiyiz ui", is a traditional portable home used by nomads. It symbolizes hospitality and deep respect for nature in Kazakh culture.</p>
+                <a href="https://www.advantour.com/kazakhstan/culture/yurt.htm" class="mt-4 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know More</a>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+            <img class="w-full h-56 object-cover" src="/images/kazakh-cuisine.png" alt="Kazakh Cuisine">
+            <div class="p-5">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Kazakh Cuisine</h3>
+                <p class="text-gray-700 dark:text-gray-300">From hearty dishes like *beshbarmak* to fermented mare’s milk known as *kumys*, Kazakh cuisine offers a unique blend of flavors and history.</p>
+                <a href="https://www.advantour.com/kazakhstan/food.htm" class="mt-4 inline-block bg-black text-white px-4 py-2 rounded hover:bg-blue-700 transition">Know More</a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <br>
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <class="hover:underline">Kazakhstan™</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
 </body>
 </html>
